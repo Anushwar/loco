@@ -35,7 +35,14 @@ func Start(in io.Reader, out io.Writer) {
 	}
 }
 
+const LOCO_FACE = `
+🛑 ヽ(⊙_⊙ )ﾉ
+`
+
 func printParserErrors(out io.Writer, errors []string) {
+	io.WriteString(out, LOCO_FACE)
+	io.WriteString(out, "Oops! We ran into some errors here!\n")
+	io.WriteString(out, " parser errors:\n")
 	for _, msg := range errors {
 		io.WriteString(out, "\t"+msg+"\n")
 	}
