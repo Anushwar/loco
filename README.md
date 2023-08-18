@@ -1,1 +1,3 @@
-# Loco lang
+# Loco
+
+A lightweight programming language.
