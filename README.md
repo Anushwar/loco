@@ -31,3 +31,23 @@ Loco supports the following data types: `null`, `bool`, `int`, `str`, `array`,
 | array | `[] [1, 2] [1, 2, 3]`          |
 | hash  | `{} {"a": 1} {"a": 1, "b": 2}` |
 | float | `1.6 321.16`                   |
+
+## Variable Bindings
+
+Here's how we can bind values in loco.
+
+> You can use 'let (var) = (expression)'
+
+```sh
+>> let age = 1;
+>> let name = "Loco";
+```
+
+## Arithmetic Expressions
+
+```sh
+>> let a = 10;
+>> let b = 20;
+>> (a + b) / 2 - 3
+12
+```
