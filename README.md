@@ -20,7 +20,7 @@ Expressed as a list of features, Loco has the following:
 ## Types
 
 Loco supports the following data types: `null`, `bool`, `int`, `str`, `array`,
-`hash`.2
+`hash`.
 
 | Type  | Syntax                         |
 | ----- | ------------------------------ |
