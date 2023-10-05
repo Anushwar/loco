@@ -95,9 +95,6 @@ true
 >> !-5;
 false
 
->> -true
-null
-
 >> !!!!-5
 true
 
