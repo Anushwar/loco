@@ -101,3 +101,31 @@ true
 >> "Hello" + " " + "World";
 Hello World
 ```
+
+## Functions
+
+You can define named or anonymous functions, including higher-order functions and closures.
+
+```sh
+>> let add = fn(x, y) { return x + y; };
+>> add(10, 20);
+30
+
+>> fn(x, y) { return x + y; }(20, 30);
+50
+
+>> let addFive = fn(x) { return x + 5 };
+>> let callThreeTimes = fn(x, f) { return f(f(f(x))) };
+>> callThreeTimes(3, addFive);
+18
+
+>> let wrapper = fn() { let inner = fn(x) { if (x == 0) { return 2 } else { return inner(x - 1) } } return inner(1) }
+>> wrapper()
+2
+
+>> let fibonacci = fn(x) { if (x == 0) { return 0 } else { if (x == 1) { return 1 } else { return fibonacci(x - 1) + fibonacci(x - 2); } } };
+>> fibonacci(9)
+34
+```
+
+> Note: Implicit return values are also possible, which means we can leave out the return statement if we want to:
