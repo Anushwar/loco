@@ -129,3 +129,37 @@ You can define named or anonymous functions, including higher-order functions an
 ```
 
 > Note: Implicit return values are also possible, which means we can leave out the return statement if we want to:
+
+## Literals
+
+### Integer
+
+Integer represents an integer value.
+
+```sh
+10;
+1234;
+```
+
+> Note: Floating point numbers can not be handled by loco.
+
+### Boolean
+
+Boolean represents a general boolean types.
+
+```sh
+true;
+false;
+
+>>> let truthy = !false;
+>>> let falsy = !true;
+```
+
+### String
+
+String represents a string. Only double quotes can be used.
+
+```sh
+"Loco Lang";
+"Hello" + " " + "World";
+```
